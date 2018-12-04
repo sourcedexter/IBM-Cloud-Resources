@@ -27,7 +27,7 @@
 			type: "POST",
 			url: "https://gateway.watsonplatform.net/visual-recognition/api/v3/classify?version=2018-03-19&url=" + url,
 			headers: {
-				"Authorization": "Basic " + btoa("apikey" + ":" + "EYq40Eih1lsT8Q3p8JrvV56S_vj3nbO1lLePkM4OBYhy")
+				"Authorization": "Basic " + btoa("apikey" + ":" + "<put_your_key_here>")
 			},
 		success: function (response){
 			console.log(response["images"][0]["classifiers"][0]["classes"][0])
